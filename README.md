@@ -18,7 +18,7 @@ The private version is as fast as you need.
    - edit main.py with your desired editor and set the destination path for chromedriver on line 28.
      -  Yes, you must include the **r** so that python knows its a real string.
      - An example path would look like:
-       - r"C:/Users/Nubonix/python_programming/webdrivers/version73/chromedriver.exe"
+       - r"C:/Users/Nubonix/python_programming/webdrivers/chrome/version73/chromedriver.exe"
  - Must have accessed https://account.xbox.com/ChangeGamerTag at least
    once (recently), with the email you wish to claim the gamertag with.
    - Must have an email that is associated with the email above so that it can be used for validation / verification INSTEAD of a phone number.
