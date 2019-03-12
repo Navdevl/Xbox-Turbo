@@ -14,7 +14,9 @@ from selenium.webdriver.support import expected_conditions as EC
 options = Options()
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--start-maximized')
+#options.add_argument('--headless')
 options.add_argument("--disable-extensions")
+#options.add_argument('--proxy-server=') 
 
 system('cls')
 
@@ -25,12 +27,12 @@ parser.add_argument('--validation', type=str, help='The validation email for the
 parser.add_argument('--username', type=str, help='The gamertag you wish to try and claim.')
 args = parser.parse_args()
 
-my_chrome_drivers_executable_path = r""
+my_chrome_drivers_executable_path = r"C:\webdrivers\chromedriver73.0.3683.20\chromedriver.exe"
 driver = webdriver.Chrome(options=options, executable_path=my_chrome_drivers_executable_path)
 username = args.username
 
 # claiming account details
-email_id = args.email_id
+email_id = args.email
 password_id = args.password
 
 # (if required) validation account details
@@ -100,7 +102,7 @@ def signin():
 		verify_email_id_by_typing_email_id.send_keys(validation_email_id)
 		send_me_a_code = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="idSubmit_SAOTCS_SendCode"]')))
 		send_me_a_code.click()
-		manually_entered_verification_code = input('Please enter the code, that you were sent in the verification email.\n I\'ll wait: ')
+		manually_entered_verification_code = str(input('Please enter the code, that you were sent in the verification email.\n I\'ll wait: '))
 		verification_code = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="idTxtBx_SAOTCC_OTC"]')))
 		verification_code.send_keys(manually_entered_verification_code)
 		click_to_verify = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="idSubmit_SAOTCC_Continue"]')))
@@ -124,7 +126,7 @@ def claim_gamertag():
 	check_availability.click()
 
 	claim_it = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="claimgamertag"]')))
-	#claim_it.click()
+	claim_it.click()
 	
 	
 def main():
