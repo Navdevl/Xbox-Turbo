@@ -5,9 +5,9 @@
 <p align="center"><h1>
 WARNING
 </h1></p>
-<p align="center"><h2>
+<h2><p align="center">
 This code is not recommended to run in a real world environment.
-</h2></p>
+</p></h2>
 
 # Xbox Turbo
 Get the gamertag you want for Xbox
