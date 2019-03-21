@@ -2,9 +2,9 @@
  </br>
 [![Bitcoin](https://img.shields.io/static/v1.svg?label=Donate&color=informational&message=Bitcoin)](https://paxful.com/?r=zGMQymwDNQW)
 3Mm7ueNMKpZdPX7t7ZWRXzKTfovLqrYCCT
-<p align="center"><h1>
+<h1><p align="center">
 WARNING
-</h1></p>
+</p></h1>
 <h2><p align="center">
 This code is not recommended to run in a real world environment.
 </p></h2>
