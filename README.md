@@ -12,16 +12,6 @@ This code is not recommended to run in a real world environment.
 # Xbox Turbo
 Get the gamertag you want for Xbox
 
-## Public vs Private:
-The private version is as fast as you need.
-
- - If you wish to discuss details of the private version, feel free to
-   message me on discord with the following hashtag.
-    - #xboxtubo
-   
- - My discord
-    - nubonix#3648
-
 ## Requirements:
  - Download chromedriver via https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_win32.zip
    - unzip the chromedriver to your desired destination
