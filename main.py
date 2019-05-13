@@ -18,7 +18,7 @@ options.add_argument('--start-maximized')
 options.add_argument("--disable-extensions")
 #options.add_argument('--proxy-server=') 
 
-system('cls')
+system('clear')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--email', type=str, help='The email you wish to use to login to use to claim a gamertag.')
@@ -27,7 +27,7 @@ parser.add_argument('--validation', type=str, help='The validation email for the
 parser.add_argument('--username', type=str, help='The gamertag you wish to try and claim.')
 args = parser.parse_args()
 
-my_chrome_drivers_executable_path = r"C:\webdrivers\chromedriver73.0.3683.20\chromedriver.exe"
+my_chrome_drivers_executable_path = r"chromedriver"
 driver = webdriver.Chrome(options=options, executable_path=my_chrome_drivers_executable_path)
 username = args.username
 
@@ -143,7 +143,7 @@ def main():
 
 
 if __name__ == "__main__":
-	system('cls')
+	system('clear')
 	print('Program initiated.\n')
 	main()
 	
