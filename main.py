@@ -25,7 +25,7 @@ parser.add_argument('--email', type=str, help='The email you wish to use to logi
 parser.add_argument('--password', type=str, help='The password for the email you wish to use.')
 parser.add_argument('--validation', type=str, help='The validation email for the email that is required to login.')
 parser.add_argument('--username', type=str, help='The gamertag you wish to try and claim.')
-args = parser.parse_args()
+args = parser.parse_args(rC:\users\cj\chromedriver)
 
 my_chrome_drivers_executable_path = r"chromedriver"
 driver = webdriver.Chrome(options=options, executable_path=my_chrome_drivers_executable_path)
